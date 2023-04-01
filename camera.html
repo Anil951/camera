@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>camera</title>
+  <link rel="icon" href="https://img.icons8.com/color/2x/compact-camera.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="camera.css">
+
+</head>
+
+<header >
+  <p><img src="https://img.icons8.com/color/2x/compact-camera.png" height="40px">
+    Camera</p>
+</header>
+<body>
+  <button id="start-camera-photo">Start Camera photo</button>
+  <button id="start-camera-video">Start Camera video</button>
+  <div id="switch">
+    <button id="switch-to-back" class="switchcam" style="display: none;">Switch to back
+      camera</button>
+    <button id="switch-to-front" class="switchcam" style="display: none;">Switch to front
+      camera</button>
+  </div>
+
+  <input type="button" id="gallerybtn" value="gallery">
+
+  <button value="back" id="back" onclick="goback()" style="display: none;">
+    <img src="back-arrow.png" height="25px" width="25px">
+  </button>
+  <input type="button" id="stop-camera" value="stop camera" onclick="stopcamera()" style="display: none;">
+
+  <video id="video" width="320px" height="240px" autoplay></video>
+  <div id="takephoto">
+    <button id="click-photo">Click Photo</button>
+    <div id="output-photo">
+      <canvas id="canvas" width="320px" height="240px"></canvas>
+      <div id="m" style="display: none;">
+        <video controls="controls" id="n" width="320px" height="240px" style="display: none;"></video>
+        <img src="delete.png" value="remove" title="delete" id="remove" height="30px" width="30px"
+          style="display: none;">
+        <img src="download.png" value="download" title="download" id="download" height="30px" width="30px"
+          style="display: none;">
+      </div>
+      <input type="button" id="downloadbtn" value="download" onclick="download()" style="display: none;">
+    </div>
+  </div>
+  <div id="takevideo">
+    <button id="start-record">Start Recording</button>
+    <button id="stop-record">Stop Recording</button>
+    <div id="output-video">
+      <video id="preview" controls="controls" style="display: none;"></video>
+      <a id="download-video" download="recent.mp4">Download Video</a>
+    </div>
+  </div>
+
+  <script src="camera.js"></script>
+  
+</body>
+
+</html>
