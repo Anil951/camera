@@ -1,1 +1,3 @@
-"# camera" 
+- An all-in-one Camera Application designed for versatile use on any device.
+- This application allows users to capture photos and videos seamlessly, featuring a temporary gallery option with the ability to delete or download content.
+- Additionally, it offers a one-time-use functionality, making it suitable for various appliances.
